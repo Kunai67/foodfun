@@ -1,0 +1,26 @@
+{
+  "name": "foodfun",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kunai67/foodfun.git"
+  },
+  "author": "Ian Agustin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kunai67/foodfun/issues"
+  },
+  "homepage": "https://github.com/Kunai67/foodfun#readme",
+  "dependencies": {
+    "animate.css": "^3.7.2",
+    "bootstrap": "^4.3.1",
+    "font-awesome": "^4.7.0",
+    "jquery-datetimepicker": "^2.5.21",
+    "owl.carousel": "^2.3.4"
+  }
+}
