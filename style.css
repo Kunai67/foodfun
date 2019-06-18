@@ -37,12 +37,32 @@ nav {
 }
 
 .banner-text__title {
-    font-family: 'Playfair Display';
     font-size: 3.5rem;
-    font-style: italic;
-    font-weight: bold;
 }
 
-.banner-text_highlight {
+.secondary-font {
+    font-family: 'Playfair Display';
+}
+
+.pr-highlight {
     color: orange;
+}
+
+.introduction__desc {
+    font-size: .8rem;
+    color: gray;
+}
+
+.btn-main {
+    background-color: orange;
+    font-size: .9rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: .5rem 1rem;
+    border: 1px solid orange;
+    transition: 250ms background-color ease-in;
+}
+
+.btn-main:hover {
+    background-color: #ffffff;
 }
