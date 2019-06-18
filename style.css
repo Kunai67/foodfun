@@ -1,16 +1,49 @@
+/* Importing Fonts */
+
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700");
 
-.banner {
-    background-image: url("img/banner-bg.jpg");
-    width: 100%;
-    height: 50rem;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 1rem;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    line-height: 1;
+/* End of Imports */
+
+
+/* Utility Styles */
+
+.secondary-font {
+    font-family: 'Playfair Display';
+}
+
+.pr-highlight {
+    color: orange;
+}
+
+.p-desc {
+    font-size: .8rem;
+    color: gray;
+}
+
+.btn-main {
+    background-color: orange;
+    font-size: .9rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: .5rem 1rem;
+    border: 1px solid orange;
+    transition: 250ms background-color ease-in;
+}
+
+.btn-main:hover {
+    background-color: #ffffff;
+}
+
+/* End Of Utility Styles */
+
+
+/* Header Styles */
+
+header {
+    top: 1.2rem;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 nav {
@@ -22,6 +55,22 @@ nav {
     font-weight: bold;
     font-size: .8rem;
     color: #000 !important;
+}
+
+/* End of Header Styles */
+
+
+/* Banner Styles */
+.banner {
+    background-image: url("img/banner-bg.jpg");
+    width: 100%;
+    height: 50rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1;
 }
 
 .banner-text {
@@ -40,29 +89,117 @@ nav {
     font-size: 3.5rem;
 }
 
-.secondary-font {
-    font-family: 'Playfair Display';
+/* End of Banner Styles */
+
+
+
+/* Introduction Styles */
+
+.introduction, .menu {
+    padding-top: 5rem;
 }
 
-.pr-highlight {
-    color: orange;
+/* End of Introduction Styles */
+
+
+
+/* Menu Styles */
+.menu {
+    background-image: url('img/food-bg.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 20rem;
 }
 
-.introduction__desc {
-    font-size: .8rem;
-    color: gray;
+.menu__food-card {
+    background-color: #f9f9ff;
 }
 
-.btn-main {
+.menu__food-card .card-body {
+    transition: 250ms background ease-in;
+}
+
+.menu__food-card:hover .card-body {
     background-color: orange;
-    font-size: .9rem;
-    text-transform: uppercase;
-    font-weight: 500;
-    padding: .5rem 1rem;
-    border: 1px solid orange;
-    transition: 250ms background-color ease-in;
 }
 
-.btn-main:hover {
-    background-color: #ffffff;
+.menu__food-card:hover .food-card__price {
+    color: #000;
+}
+
+.food-card__img-container {
+    overflow: hidden;
+}
+
+.food-card__img {
+    transition: 250ms transform ease-in;
+}
+
+.menu__food-card:hover .food-card__img {
+    transform: scale(1.1);
+}
+
+.menu__food-card h3 {
+    font-family: "Playfair Display";
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.food-card__price {
+    font-size: 1.2rem;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    transition: 250ms color ease-in;
+}
+
+/* End of Menu Styles */
+
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 425px) {
+    .container {
+        width: 95% !important;
+    }
+
+    .banner {
+        height: 30rem;
+    }
+
+    .banner-text {
+        position: relative;
+        top: 50%;
+    }
+
+    .banner-text__title {
+        font-size: 2.5rem;
+    }
+
+    .introduction, .menu {
+        padding-top: 2rem;
+    }
+    
+    .introduction__text, .menu__text {
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .menu {
+        background-position: center;
+        background-size: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .menu .container {
+        width: 100% !important;
+    }
+}
+
+@media screen and (min-width: 1441px) {
+    .banner-text {
+        position: relative;
+        top: 50%;
+    }
 }
