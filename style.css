@@ -21,14 +21,19 @@
     color: gray;
 }
 
-.btn-main {
+.btn-main, .btn-main-alt {
     background-color: orange;
-    font-size: .9rem;
+    font-size: .8rem;
     text-transform: uppercase;
     font-weight: 500;
     padding: .5rem 1rem;
     border: 1px solid orange;
     transition: 250ms background-color ease-in;
+}
+
+.btn-main-alt:hover {
+    background-color: transparent;
+    color: orange;
 }
 
 .btn-main:hover {
@@ -154,6 +159,29 @@ nav {
 }
 
 /* End of Menu Styles */
+
+/* Reservation Styles */
+
+.reservation {
+    background-image: url('img/reservation-bg.jpg');
+    padding: 5rem 0;
+    background-position: left top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #ffffff;
+}
+
+.reservation__heading {
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.reservation__desc {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+/* End of Reservation Styles */
 
 
 
