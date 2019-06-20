@@ -100,7 +100,7 @@ nav {
 
 /* Introduction Styles */
 
-.introduction, .menu {
+.introduction, .menu, .dishes {
     padding-top: 5rem;
 }
 
@@ -183,6 +183,53 @@ nav {
 
 /* End of Reservation Styles */
 
+/* Dishes Styles */
+
+.dish__number {
+    font-size: 3.2rem;
+    position: relative;
+}
+
+.dish__number::after {
+    content: '';
+    height: 1px;
+    width: 10rem;
+    margin-left: 1rem;
+    position: absolute;
+    bottom: 35%;
+    background-color: #000;
+}
+
+.dish__heading {
+    font-size: 2rem;
+}
+
+.dish__price {
+    font-size: 1.7rem;
+}
+
+.dish__link {
+    text-transform: uppercase;
+    color: #000;
+    font-size: .8rem;
+}
+
+.dish__arrow {
+    transition: 500ms transform ease;
+    margin-left: .5rem;
+}
+
+.dish__link:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+.dish__link:hover .dish__arrow {
+    transform: translateX(.25rem);
+    color: orange;
+}
+
+/* End of Dishes Styles */
 
 
 /* MEDIA QUERIES */
@@ -216,6 +263,18 @@ nav {
     .menu {
         background-position: center;
         background-size: 100%;
+    }
+
+    .dishes__img {
+        order: 2;
+    }
+
+    .dishes__dish {
+        order: 1;
+    }
+
+    .dish__number::after {
+        width: 70%;
     }
 }
 
