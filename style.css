@@ -100,7 +100,7 @@ nav {
 
 /* Introduction Styles */
 
-.introduction, .menu, .dishes {
+.introduction, .menu, .dishes, .testimonials {
     padding-top: 5rem;
 }
 
@@ -231,8 +231,54 @@ nav {
 
 /* End of Dishes Styles */
 
+/* Testimonial Styles */
+
+.testimonials {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('img/testimonial-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.testimonials__name {
+    transition: 250ms color ease;
+}
+
+.testimonials__box:hover .testimonials__name {
+    color: orange;
+}
+
+.owl-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.owl-dot {
+    background-color: white !important;
+    width: 1.2rem;
+    height: 5px;
+    border-radius: 1rem;
+    margin: 0 .4rem;
+}
+
+.owl-dot.active {
+    background-color: orange !important;
+}
+
+/* End of Testimonial Styles */
 
 /* MEDIA QUERIES */
+@media screen and (min-width: 0px) and (max-width: 990px) {
+    .testimonials img {
+        width: 5rem !important;
+        margin: 0 auto 1rem auto;
+    }
+
+    .testimonials__box .row {
+        text-align: center;
+    }
+}
+
 @media screen and (max-width: 425px) {
     .container {
         width: 95% !important;
