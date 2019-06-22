@@ -21,7 +21,8 @@
     color: gray;
 }
 
-.btn-main, .btn-main-alt {
+.btn-main,
+.btn-main-alt {
     background-color: orange;
     font-size: .8rem;
     text-transform: uppercase;
@@ -100,7 +101,10 @@ nav {
 
 /* Introduction Styles */
 
-.introduction, .menu, .dishes, .testimonials {
+.introduction,
+.menu,
+.dishes,
+.testimonials {
     padding-top: 5rem;
 }
 
@@ -234,7 +238,7 @@ nav {
 /* Testimonial Styles */
 
 .testimonials {
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('img/testimonial-bg.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/testimonial-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -267,6 +271,70 @@ nav {
 
 /* End of Testimonial Styles */
 
+/* Blog Styles */
+
+.blog__box {
+    background-color: #f9f9ff;
+    transition: 250ms box-shadow ease;
+    margin-bottom: 2rem;
+}
+
+.blog__box .card-body {
+    transition: 250ms background ease;
+}
+
+.blog__box:hover {
+    -webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.blog__box:hover .card-body {
+    background-color: #ffffff;
+}
+
+.blog__box h5 {
+    font-size: 1.1rem;
+}
+
+.blog__details {
+    margin-bottom: 1rem;
+}
+
+.blog__details p {
+    margin: 0 2rem 0 0;
+}
+
+.blog__author,
+.blog__date {
+    display: flex;
+    align-items: center;
+}
+
+.blog__link {
+    text-transform: uppercase;
+    color: #000;
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+.blog__arrow {
+    transition: 500ms transform ease;
+    margin-left: .5rem;
+}
+
+.blog__link:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+.blog__link:hover .blog__arrow {
+    transform: translateX(.25rem);
+    color: orange;
+}
+
+/* End of Blog Styles */
+
 /* MEDIA QUERIES */
 @media screen and (min-width: 0px) and (max-width: 990px) {
     .testimonials img {
@@ -297,11 +365,13 @@ nav {
         font-size: 2.5rem;
     }
 
-    .introduction, .menu {
+    .introduction,
+    .menu {
         padding-top: 2rem;
     }
-    
-    .introduction__text, .menu__text {
+
+    .introduction__text,
+    .menu__text {
         width: 100% !important;
         text-align: center;
     }
