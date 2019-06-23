@@ -365,8 +365,48 @@ nav {
     outline: none;
 }
 
-
 /* End of Booking Styles */
+
+/* Footer-Links Styles */
+
+.footer-links {
+    background-color:#131230;
+    padding: 3rem;
+}
+
+.footer-links__link {
+    display: flex;
+    color: gray;
+}
+
+.footer-links__link i {
+    margin: .5rem 1rem 0 0;
+}
+
+/* End of Footer-Links Styles */
+
+/* Footer Styles */
+
+footer {
+    background-color: #0d0d27;
+}
+
+footer p, a {
+    color: #ffffff;
+    font-size: .8rem;
+    margin: 0;
+}
+
+.footer-media p, .footer-media a {
+    display: inline;
+    margin-right: 1.5rem;
+}
+
+.footer-media a {
+    color: #ffffff;
+}
+
+/* End of Footer Styles */
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 990px) {
