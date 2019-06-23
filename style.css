@@ -335,8 +335,41 @@ nav {
 
 /* End of Blog Styles */
 
+/* Booking Styles */
+
+.booking {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('img/table-bg.jpg');
+    background-size: cover;
+    padding: 3rem 0;
+}
+
+.booking__input {
+    background-color: #ffffff;
+    margin-right: 1.5rem;
+    padding: .5rem;
+    margin-top: 1rem;
+}
+
+.booking__input input {
+    border: none;
+    padding: .25rem;
+    font-size: .8rem;
+}
+
+.booking__input i {
+    margin: 0 .25rem;
+}
+
+.booking__input input:focus {
+    border: none;
+    outline: none;
+}
+
+
+/* End of Booking Styles */
+
 /* MEDIA QUERIES */
-@media screen and (min-width: 0px) and (max-width: 990px) {
+@media screen and (max-width: 990px) {
     .testimonials img {
         width: 5rem !important;
         margin: 0 auto 1rem auto;
@@ -344,6 +377,19 @@ nav {
 
     .testimonials__box .row {
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .booking__flexbox {
+        /* flex-direction: column; */
+        flex-flow: row wrap;
+        padding: 0 5%;
+    }
+
+    .booking__input {
+        text-align: left;
+        margin-left: 1.5rem;
     }
 }
 

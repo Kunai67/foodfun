@@ -20,3 +20,13 @@ $(document).ready(function () {
         },
     });
 });
+
+$("#booking__date").datetimepicker({
+    timepicker: false,
+    format: 'M-d-Y',
+});
+
+$("#booking__time").datetimepicker({
+    datepicker: false,
+    format: 'H:i',
+});
