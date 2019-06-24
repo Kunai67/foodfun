@@ -371,7 +371,7 @@ nav {
 
 .footer-links {
     background-color:#131230;
-    padding: 3rem;
+    padding: 3rem 0;
 }
 
 .footer-links__link {
@@ -477,6 +477,15 @@ footer p, a {
 
     .dish__number::after {
         width: 70%;
+    }
+
+    footer p, .footer-media {
+        text-align: center !important;
+    }
+
+    .footer-media p {
+        display: block;
+        margin-top: 1rem;
     }
 }
 
